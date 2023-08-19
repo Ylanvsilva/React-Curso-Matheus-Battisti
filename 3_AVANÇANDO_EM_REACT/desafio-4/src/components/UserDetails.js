@@ -1,11 +1,10 @@
-const UserDetails = ({ name, age, job }) => {
-
+const UserDetails = ({ name, job, age }) => {
     return (
         <div>
-            <h2>{name}</h2>
-            <p>Idade: {age}</p>
-            <p>Profissão: {job}</p>
-            {age >= 18 ? (<p>Pode tirar a carteira de habilitação</p>) : (<p>Menor de idade</p>)}
+            <h1>Nome: {name}</h1>
+            <h2>Trabalho: {job}</h2>
+            <h3>Idade: {age}</h3>
+            {age >= 18 ? (<p>Você esta APTO a tirar a carteira</p>) : (<p>Você NÃO pode tirar carteira</p>)}
         </div>
     )
 }
