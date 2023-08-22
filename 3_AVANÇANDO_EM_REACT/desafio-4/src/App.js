@@ -2,20 +2,20 @@ import './App.css';
 import UserDetails from './components/UserDetails';
 
 function App() {
-  const pessoas = [
-    { id: 1, name: 'Ylan', job: 'Dev', age: 21},
-    { id: 2, name: 'Vinicio', job: 'CEO', age: 11},
-    { id: 3, name: 'Ylan', job: 'Educador', age: 31},
+  const nomes = [
+    {id: 1, name: "Ylan", job: "Programador", age: 21},
+    {id: 2, name: "Vinicio", job: "Dev", age: 11},
+    {id: 3, name: "Santos", job: "Analista", age: 33},
   ]
-
+  
   return (
     <div className="App">
-      {pessoas.map((people) => (
-        <UserDetails
-          key={people.id}
-          name={people.name}
-          job={people.job}
-          age={people.age}
+      {nomes.map((names) => (
+        <UserDetails 
+          key={names.id}
+          name={names.name}
+          job={names.job}
+          age={names.age}
         />
       ))}
     </div>
